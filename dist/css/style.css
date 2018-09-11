@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans"); */
+/* need to get easeOut method from last project */
+
+/* CSS Color Variables */
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+  --easeOut: all 0.25s ease-out;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #252529;
+  margin: 0;
+  color: white;
+}
+
+/* img {
+  width: 100%;
+} */
+
+/* img#project1,
+#project2,
+#project3 {
+  width: 50%;
+} */
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* a:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+} */
+
+/* .language-icons i:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+} */
+
+/* .contact-icons i:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+} */
+
+/* ========= Sticky Header ========= */
+.in-view {
+  visibility: hidden;
+}
+
+.sticky-header {
+  visibility: hidden;
+  color: black;
+  position: fixed;
+  width: 100%;
+  float: left;
+  min-height: 0;
+  height: 100px;
+  background-color: var(--light-color);
+  /* z-index: 500; */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-img {
+  position: absolute;
+  background-image: url("../img/IMG_5078_preview.jpeg");
+  background-size: cover;
+  height: 48px;
+  width: 48px;
+  left: 35px;
+  top: 45px;
+  border-radius: 50%;
+}
+
+/* positions name/title on sticky bar */
+.sticky-info {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+}
+
+.sticky-info p {
+  margin-bottom: 0;
+}
+
+/* ========= Section ========= */
+.section {
+  padding: 2rem 0;
+}
+
+.section-head {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+}
+
+/* ========= Welcome ========= */
+
+#welcome {
+  margin: 0;
+  padding: 0;
+  background: url("../img/Depositphotos_162118918_l-2015.jpg") no-repeat
+    center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#welcome .container {
+  margin-top: 25vh;
+}
+
+/* name */
+#welcome h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+/* welcome title */
+#welcome h2 {
+  font-size: 2rem;
+}
+
+i {
+  color: black;
+  padding: 3px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* forces main nav to behave as desired */
+nav a:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+  /* ease out var, slows highlighting of element */
+  transition: var(--easeOut);
+}
+
+/* footer a hover  */
+
+footer a:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+  /* ease out var, slows highlighting of element */
+  transition: var(--easeOut);
+}
+
+/* =============== Footer =============  */
+
+footer {
+  text-align: center;
+}
+
+#codeupLogo {
+  background-image: url("../img/codeup-arrow-logo.png");
+  height: 45px;
+  width: 50px;
+  background-size: cover;
+  /* position: relative; */
+  /* float: right; */
+  /* /* top: 60px; */
+
+  /* top: -100px; */
+  /* display: inline-block; */
+}
+
+footer .footer-cols ul {
+  list-style: none;
+  /* display: inline-block; */
+}
+
+footer .footer-cols ul li {
+  display: inline-block;
+  /* padding: 1rem; */
+  /* text-align: center; */
+}
+
+footer .footer-bottom {
+  background: #333;
+  padding: 1rem;
+  font-size: 12px;
+}
+
+/* ========= Utility Classes ========= */
+
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.lead {
+  font-size: 0.8rem;
+  font-family: Montserrat;
+}
+
+/* design, develop ... phrase  transparent background style*/
+p.sub {
+  background-color: rgba(55, 74, 103, 0.5);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*  Text Colors  */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+/* === Background Section Colors === */
+#portfolio {
+  background-color: var(--light-color);
+  color: black;
+}
+
+/* Icons */
+#icons i {
+  font-size: 2.5rem;
+}
+#icons a {
+  /* font-size: 2.5rem; */
+  text-decoration: none;
+}
+
+#icons i:hover {
+  color: var(--primary-color-hover);
+  transition: var(--easeOut);
+}
+
+/* ========= About Me ==============  */
+
+main {
+  padding: 3rem;
+  /* min-height: calc(100vh - 60px); */
+}
+
+main h4 {
+  color: black;
+  text-align: center;
+}
+
+.lg-heading {
+  color: black;
+}
+
+#about-me {
+  background-color: var(--light-color);
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "bioimage bio"
+    "job1 job1";
+  grid-template-columns: repeat(1fr, 1fr);
+}
+
+.bio-img {
+  grid-area: bioimage;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background: url("../img/IMG_5080.jpeg");
+  border-radius: 50%;
+  /* // border: solid 3px #d24136; */
+  /* border: solid 3px $secondary-color; */
+  background-size: cover;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1rem;
+  color: black;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+
+.job {
+  /* background: lighten($primary-color, 5); */
+  padding: 0.5rem;
+  /* border-bottom: #f8f036 5px solid; */
+}
+
+.language-icons,
+i {
+  text-align: center;
+  /* font-size: 2.5rem; */
+}
+/* this actually selects the devicons size */
+.job i {
+  font-size: 2.5rem;
+  /* text-align: center; */
+}
+
+.language-icons i:hover {
+  color: var(--primary-color-hover);
+}
+
+/* ========= Resume  ========= */
+
+.grid-resume {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.clifton-strengths a:hover {
+  color: var(--primary-color-hover);
+  text-decoration: none;
+}
+
+/* ========= Portfolio ========= */
+
+.projects,
+img {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  /* border: 2px var(--primary-color-hover) solid; */
+}
+
+img:hover {
+  background-color: yellow;
+  transition: var(--easeOut);
+}
+
+/* targets font awesome icons */
+.projects,
+i {
+  font-size: 1rem;
+}
+
+#portfolio img:hover {
+  opacity: 0.75;
+  color: yellow;
+  /* include ease in/out  */
+}
+
+/* button styles */
+
+.work-btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+.work-btn:hover {
+  color: red;
+}
+
+/* ========= Navigation ========= */
+
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+  /* ensure navbar overlaps everything else */
+  z-index: 999;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+/* styles only applied to 580px or LESS */
+@media screen and (max-width: 580px) {
+  /* original styling from old portfolio page brought in to make about me section 
+work correclty on mobile */
+
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+
+  /* resume stacked  */
+
+  .grid-resume {
+    grid-template-areas:
+      "job-1"
+      "job-2"
+      "job-3"
+      "job-4"
+      "job-5";
+    grid-template-columns: 1fr;
+  }
+
+  /* stacks portfolio work imgs */
+  .projects {
+    grid-template-areas:
+      "img"
+      "img"
+      "img";
+    grid-template-columns: 1fr;
+  }
+
+  /* original style end======================= */
+  /* class to add/remove once I figure out best event handler for sticky header */
+  .hide-on-small {
+    display: none;
+  }
+
+  #welcome {
+    height: 50vh;
+  }
+
+  #welcome .container {
+    margin-top: 15vh;
+  }
+
+  #welcome h1 {
+    font-size: 3rem;
+  }
+
+  #welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+    text-decoration: none;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+
+/* @media screen and (max-width: 580px) {
+
+} */
