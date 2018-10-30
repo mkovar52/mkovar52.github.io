@@ -19,39 +19,14 @@ body {
   color: white;
 }
 
-/* img {
-  width: 100%;
-} */
-
-/* img#project1,
-#project2,
-#project3 {
-  width: 50%;
-} */
-
 a {
   text-decoration: none;
   color: #ccc;
 }
 
-/* a:hover {
-  color: var(--primary-color-hover);
-  text-decoration: none;
-} */
-
-/* .language-icons i:hover {
-  color: var(--primary-color-hover);
-  text-decoration: none;
-} */
-
-/* .contact-icons i:hover {
-  color: var(--primary-color-hover);
-  text-decoration: none;
-} */
-
 /* ========= Sticky Header ========= */
 .in-view {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .sticky-header {
@@ -146,42 +121,35 @@ nav a:hover {
 }
 
 /* footer a hover  */
-
 footer a:hover {
   color: var(--primary-color-hover);
   text-decoration: none;
-  /* ease out var, slows highlighting of element */
   transition: var(--easeOut);
 }
 
 /* =============== Footer =============  */
-
 footer {
   text-align: center;
 }
 
-#codeupLogo {
+/* #codeupLogo {
   background-image: url("../img/codeup-arrow-logo.png");
   height: 45px;
   width: 50px;
   background-size: cover;
-  /* position: relative; */
-  /* float: right; */
-  /* /* top: 60px; */
-
-  /* top: -100px; */
-  /* display: inline-block; */
-}
+  position: relative;
+  float: right;
+  top: 60px;
+  top: -100px;
+  display: inline-block;
+} */
 
 footer .footer-cols ul {
   list-style: none;
-  /* display: inline-block; */
 }
 
 footer .footer-cols ul li {
   display: inline-block;
-  /* padding: 1rem; */
-  /* text-align: center; */
 }
 
 footer .footer-bottom {
@@ -191,7 +159,6 @@ footer .footer-bottom {
 }
 
 /* ========= Utility Classes ========= */
-
 .container {
   max-width: 1180px;
   text-align: center;
@@ -204,7 +171,7 @@ footer .footer-bottom {
   font-family: Montserrat;
 }
 
-/* design, develop ... phrase  transparent background style*/
+/* design, develop ... phrase  transparent background style */
 p.sub {
   background-color: rgba(55, 74, 103, 0.5);
 }
@@ -226,18 +193,11 @@ p.sub {
   color: var(--light-color);
 }
 
-/* === Background Section Colors === */
-#portfolio {
-  background-color: var(--light-color);
-  color: black;
-}
-
 /* Icons */
 #icons i {
   font-size: 2.5rem;
 }
 #icons a {
-  /* font-size: 2.5rem; */
   text-decoration: none;
 }
 
@@ -247,10 +207,8 @@ p.sub {
 }
 
 /* ========= About Me ==============  */
-
 main {
   padding: 3rem;
-  /* min-height: calc(100vh - 60px); */
 }
 
 main h4 {
@@ -282,8 +240,6 @@ main h4 {
   height: 300px;
   background: url("../img/IMG_5080.jpeg");
   border-radius: 50%;
-  /* // border: solid 3px #d24136; */
-  /* border: solid 3px $secondary-color; */
   background-size: cover;
 }
 
@@ -298,20 +254,17 @@ main h4 {
 }
 
 .job {
-  /* background: lighten($primary-color, 5); */
   padding: 0.5rem;
-  /* border-bottom: #f8f036 5px solid; */
 }
 
 .language-icons,
 i {
   text-align: center;
-  /* font-size: 2.5rem; */
 }
-/* this actually selects the devicons size */
+
+/* devicon size */
 .job i {
   font-size: 2.5rem;
-  /* text-align: center; */
 }
 
 .language-icons i:hover {
@@ -319,7 +272,6 @@ i {
 }
 
 /* ========= Resume  ========= */
-
 .grid-resume {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -332,22 +284,27 @@ i {
 }
 
 /* ========= Portfolio ========= */
+#portfolio {
+  background-color: var(--light-color);
+  color: black;
+}
 
-.projects,
-img {
+.projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-size: cover;
+}
+
+#portfolio img {
   width: 100%;
-  /* border: 2px var(--primary-color-hover) solid; */
 }
 
 img:hover {
-  background-color: yellow;
   transition: var(--easeOut);
 }
 
-/* targets font awesome icons */
+/* ===== font awesome icons ====== */
 .projects,
 i {
   font-size: 1rem;
@@ -355,12 +312,9 @@ i {
 
 #portfolio img:hover {
   opacity: 0.75;
-  color: yellow;
-  /* include ease in/out  */
 }
 
-/* button styles */
-
+/* ===== button styles ===== */
 .work-btn {
   display: block;
   padding: 0.5rem 1rem;
@@ -373,7 +327,6 @@ i {
 }
 
 /* ========= Navigation ========= */
-
 nav {
   height: 40px;
   width: 100%;
@@ -406,11 +359,9 @@ nav li:hover {
 nav a#openup {
   display: none;
 }
+
 /* styles only applied to 580px or LESS */
 @media screen and (max-width: 580px) {
-  /* original styling from old portfolio page brought in to make about me section 
-work correclty on mobile */
-
   main {
     align-items: center;
     text-align: center;
@@ -432,7 +383,6 @@ work correclty on mobile */
   }
 
   /* resume stacked  */
-
   .grid-resume {
     grid-template-areas:
       "job-1"
@@ -450,12 +400,6 @@ work correclty on mobile */
       "img"
       "img";
     grid-template-columns: 1fr;
-  }
-
-  /* original style end======================= */
-  /* class to add/remove once I figure out best event handler for sticky header */
-  .hide-on-small {
-    display: none;
   }
 
   #welcome {
@@ -491,6 +435,7 @@ work correclty on mobile */
     float: left;
     position: relative;
   }
+  /* adjusts links while in mobile view */
   nav a {
     text-align: left;
     width: 100%;
@@ -536,9 +481,3 @@ work correclty on mobile */
 .cf {
   zoom: 1;
 }
-
-/* For IE 6/7 (trigger hasLayout) */
-
-/* @media screen and (max-width: 580px) {
-
-} */
