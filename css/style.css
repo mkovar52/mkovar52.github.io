@@ -112,6 +112,10 @@ i {
   text-decoration: none;
 }
 
+i.offColor {
+  color: white;
+}
+
 /* forces main nav to behave as desired */
 nav a:hover {
   color: var(--primary-color-hover);
@@ -296,8 +300,16 @@ i {
   background-size: cover;
 }
 
+.projects2 {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-size: cover;
+}
+
 #portfolio img {
   width: 100%;
+  padding-top: 1rem;
 }
 
 img:hover {
