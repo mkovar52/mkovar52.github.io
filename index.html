@@ -1,322 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Business Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">Acme Business</div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#top">Home</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Mykel Kovar's Page</title>
-
-</head>
-
-<body>
-    <!-- ====================  Showcase & Nav Section ==================== -->
-    <div id="welcome">
-        <header>
-            <nav class='cf'>
-                <ul class='cf'>
-                    <li class="hide-on-small">
-                        <a href="#welcome">Welcome</a>
-                    </li>
-                    <li>
-                        <a href='#about-me'>About Me</a>
-                    </li>
-                    <li>
-                        <a href='#resume'>Resume</a>
-                    </li>
-                    <li>
-                        <a href='#portfolio'>Portfolio</a>
-                    </li>
-                    <li>
-                        <a href='#contact'>Contact</a>
-                    </li>
-                </ul>
-                <a href='#' id='openup'>Mykel Kovar</a>
-            </nav>
-        </header>
-
-        <!-- ====================  Dropdown Feat. Section ==================== -->
-        <aside class="drop-down-highlight">
-            <div class="sticky-header">
-                <div class="sticky-img"></div>
-                <div class="sticky-info">
-                    <p class="font-weight-bold">Mykel Kovar
-                        <p class="lead">Software Developer</p>
-                    </p>
-
-                </div>
-            </div>
-        </aside>
-
-        <!-- ====================  Welcome Section ==================== -->
-        <div class="section-main container welcome">
-            <h1>Mykel Kovar</h1>
-            <h2>
-                < software developer /> </h2>
-            <p class="lead hide-on-small sub">
-                Design / Develop / Program / Learn / Repeat
+    <main id="top">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-text">
+            <p class="eyebrow">Small business, big impact</p>
+            <h1>We turn your operations into a growth advantage.</h1>
+            <p class="lead">
+              Acme Business partners with founders to streamline systems,
+              elevate customer experiences, and unlock sustainable revenue.
             </p>
-            <div id="icons">
-                <a href="mailto:mykelkovar@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mykel-kovar" target="_#">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/mkovar52">
-                    <i class="fab fa-github"></i>
-                </a>
+            <div class="hero-actions">
+              <a class="btn primary" href="#contact">Book a consultation</a>
+              <a class="btn ghost" href="mailto:hello@acmebusiness.com">Email us</a>
             </div>
+          </div>
+          <div class="hero-panel" aria-label="Service highlights">
+            <div class="panel-item">
+              <h3>Operations tune-up</h3>
+              <p>Workflow audits, playbooks, and automation to reduce friction.</p>
+            </div>
+            <div class="panel-item">
+              <h3>Customer success</h3>
+              <p>Retention programs and onboarding flows that delight clients.</p>
+            </div>
+            <div class="panel-item">
+              <h3>Leadership support</h3>
+              <p>Executive guidance and reporting so teams move in sync.</p>
+            </div>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <!-- ====================  About Me ==================== -->
-    <main id="about-me">
-        <h1 class="lg-heading">
-            <i class="fas fa-id-badge mr-1 fa-sm"></i>About
-            <span class="text-secondary">Me</span>
-        </h1>
-        <div class="about-info">
-            <div alt="Mykel Kovar" class="bio-img">
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Tell us about your goals</h2>
+            <p>
+              Share a few details and we’ll respond within one business day with
+              next steps.
+            </p>
+            <div class="contact-details">
+              <a href="tel:+12125550123">(212) 555-0123</a>
+              <a href="mailto:hello@acmebusiness.com">hello@acmebusiness.com</a>
+              <p>123 Market Street, Suite 400<br />San Francisco, CA 94105</p>
             </div>
-            <div class="bio bio-background">
-                <h3 class="text-secondary">BIO:</h3>
-                <p class="lead"> My name is Mykel Kovar, and I write, design and develop websites and web applications. I geniuniely enjoy
-                    helping people, and know that my newfound skills in the tech area will make me more capable then ever.
-                    <br>
-                    <br>Outside of work, I enjoy spending time with my fiancée, Millie, traveling, and snowboarding.
-                </p>
+          </div>
+          <form class="contact-form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Doe" />
             </div>
-            <div class="job job-1">
-                <h4>
-                    < Technology & Frameworks /> </h4>
-                <div class="language-icons">
-                    <i class="devicon-html5-plain-wordmark" title="HTML5"></i>
-                    <i class="devicon-css3-plain-wordmark" title="CSS"></i>
-                    <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-                    <i class="devicon-javascript-plain" title="JavaScript"></i>
-                    <i class="devicon-jquery-plain-wordmark" title="jQuery"></i>
-                    <i class="devicon-java-plain-wordmark" title="Java"></i>
-                    <i class="devicon-python-plain" title="Python"></i>
-                    <i class="devicon-mysql-plain-wordmark" title="MySQL"></i>
-                    <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
-                    <i class="devicon-git-plain" title="Git"></i>
-                    <i class="devicon-react-original" title="React.js"></i>
-                    <i class="devicon-intellij-plain" title="IntelliJ"></i>
-                    <i class="devicon-visualstudio-plain" title="VSCode"></i>
-                    <i class="devicon-apple-original" title="macOS"></i>
-
-                </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="jane@example.com"
+              />
             </div>
+            <div class="field">
+              <label for="message">How can we help?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Share a few details about your project"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send message</button>
+          </form>
         </div>
-        </div>
+      </section>
     </main>
 
-    <!-- ====================  Resume Section ==================== -->
-    <section id="resume" class="section">
-        <div class="container">
-            <h2 class="section-head">
-                <i class="far fa-file fa-sm mb-1 offColor"></i> Professional Experience
-            </h2>
-            <p class="lead clifton-strengths">Gallup Top5 CliftonStrengths
-                <br>
-                <a href="#">Competition</a> |
-                <a href="#">Futuristic</a> |
-                <a href="#">Learner</a> |
-                <a href="#">Input</a> |
-                <a href="#">Empathy</a>
-            </p>
-            <div class="grid-resume">
-                <div class="resume-left-side">
-                    <hr>
-                    <div class="job-1">
-                        <h4 class="mb-0"> - Infor - </h4>
-                        <p class="lead mb-0">San Antonio, TX</p>
-                        <p class="lead mb-0">Associate Software Engineer</p>
-                        <p class="lead mb-5">( present )</p>
-                    </div>
-                    <div class="job-2">
-                        <h4 class="mb-0"> - FunnelAI - </h4>
-                        <p class="lead mb-0">San Antonio, TX</p>
-                        <p class="lead mb-0">Fullstack Developer</p>
-                        <p class="lead mb-5">( 2018 - 2019 )</p>
-                    </div>
-                </div>
-                <div class="resume-right-side">
-                    <hr>
-                    <div class="job-4">
-                        <h4 class="mb-0"> - Accenture Federal Services - </h4>
-                        <p class="lead mb-0">San Antonio, TX</p>
-                        <p class="lead mb-0">ServiceNow Developer Associate</p>
-                        <p class="lead mb-5">( 2018 - 2019 )</p>
-                    </div>
-                    <div class="job-5">
-                        <h4 class="mb-0"> - Digiboost - </h4>
-                        <p class="lead mb-0">San Antonio, TX</p>
-                        <p class="lead mb-0">Solutions Consultant</p>
-                        <p class="lead mb-5">(2017 - 2018)</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ====================  Portfolio Section ====================  -->
-    <main id="portfolio">
-        <h1 class="lg-heading">
-            <i class="far fa-file-code fa-sm"></i> My
-            <span class="text-secondary">Work</span>
-        </h1>
-        <p class="sm-heading">A few of my recent projects:</p>
-
-        <div class="projects">
-            <!-- === project 1 === -->
-            <div class="item">
-                <a href="#!">
-                    <img src="./img/neonbrand-2c9ffiPlD9Q-unsplash.jpg" alt="project1">
-                </a>
-                <a href="https://github.com/mkovar52/feedback-app" target="_blank" class="work-btn btn-dark">
-                    <i class="fab fa-github"></i> Github
-                </a>
-
-                <!-- drop down w/ project info -->
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header p-0" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
-                                    <i class="fas fa-info-circle"></i> Feedback App
-                                </button>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Flask application that allows users to submit feedback about a purchase experience. View it
-                        <a href="https://officefeedback.herokuapp.com/" target="_#" style="color: red;">here</a>.
-                    </div>
-                </div>
-            </div>
-
-            <!-- === project 2 (LOCALTHREADS) === -->
-            <div class="item">
-                <a href="#!">
-                    <img src="./img/perry-grone-732606-unsplash.jpg" alt="project1">
-                </a>
-                <a href="https://github.com/TeamHelpingHands/helping-hands" target="_blank" class="work-btn btn-dark">
-                    <i class="fab fa-github"></i> Github
-                </a>
-                <!-- drop down w/ project info -->
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header p-0" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
-                                    <i class="fas fa-info-circle"></i> HelpingHands
-                                </button>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        HelpingHands (HH) is a full-stack web application built to facilitate the connection between volunteers and organizations.
-                        View more
-                        <a href="https://hhsa.site/" target="_#" style="color: red;">here</a>.
-                    </div>
-                </div>
-            </div>
-
-            <!-- === project 3 (FREEFILE) === -->
-            <div class="item">
-                <a href="#!">
-                    <img src="./img/fabian-blank-78637-unsplash.jpg" alt="project2">
-                </a>
-                <a href="https://github.com/mkovar52/react-contact-manger" target="_blank" class="work-btn btn-dark">
-                    <i class="fab fa-github"></i>Github
-                </a>
-                <!-- drop down w/ project info -->
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header p-0" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-controls="collapseThree">
-                                    <i class="fas fa-info-circle"></i>FreeFile
-                                </button>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div id="collapseThree" class="collapse hide" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        FreeFile is a company that offers free tax filing and tax advance loan services. View more
-                        <a href="http://freefile.io/">here</a>.
-                    </div>
-                </div>
-            </div>
-
-            <!-- main projects ends below -->
-        </div>
-    </main>
-
-    <!-- ====================  Contact Section ====================  -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-head">
-                <i class="far fa-address-card fa-sm offColor"></i> Connect With Me
-            </h2>
-            <p class="lead">Contact me via:</p>
-            <div id="icons">
-                <a href="mailto:mykelkovar@gmail.com">
-                    <i class="fas fa-envelope offColor"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mykel-kovar" target="_#">
-                    <i class="fab fa-linkedin-in offColor"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ====================  Footer Section ====================  -->
-    <footer>
-        <div class="container">
-            <div class="footer-cols">
-                <div class="text-center">
-                    <a href="#welcome">Welcome </a>
-                    <span>|</span>
-                    <a href="#about-me">About</a>
-                    <span>|</span>
-                    <a href="#resume">Resume </a>
-                    <span>|</span>
-                    <a href="#portfolio">Portfolio </a>
-                </div>
-            </div>
-
-        </div>
-        </div>
-        <div class="footer-bottom text-center">
-            Copyright &copy; 2019
-        </div>
-
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Acme Business. All rights reserved.</p>
+      </div>
     </footer>
-    <!-- Bootstrap CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-</body>
 
+    <script src="js/main.js"></script>
+  </body>
 </html>
