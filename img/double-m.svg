@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;display=swap');
+    ]]></style>
+  </defs>
+
+  <text x="300" y="90" text-anchor="middle"
+        font-family="Montserrat, Arial, sans-serif"
+        font-size="72" font-weight="700" fill="#0B1C26">
+    DOUBLE M
+  </text>
+
+  <text x="300" y="150" text-anchor="middle"
+        font-family="Montserrat, Arial, sans-serif"
+        font-size="48" font-weight="600"
+        letter-spacing="6" fill="#4A77A8">
+    VENDING
+  </text>
+</svg>
