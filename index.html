@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme Business Solutions</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Double M Vending</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,41 +16,41 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="brand">Acme Business</div>
+        <!-- <div class="brand">Double M Vending</div> -->
+    <img class="brand" src="img/machineWithTextLogo.png" alt="Double M Vending"/>
         <nav class="site-nav" aria-label="Primary">
           <a href="#top">Home</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
+    <input type="hidden" name="contact-form" value="contact-form" />
 
     <main id="top">
       <section class="hero">
         <div class="container">
           <div class="hero-text">
             <p class="eyebrow">Small business, big impact</p>
-            <h1>We turn your operations into a growth advantage.</h1>
+            <h1>We turn vending into a hassle-free service.</h1>
             <p class="lead">
-              Acme Business partners with founders to streamline systems,
-              elevate customer experiences, and unlock sustainable revenue.
+              It's our goal to partner with businesses to deliver added value and enhance employee and customer experiences daily.
             </p>
             <div class="hero-actions">
-              <a class="btn primary" href="#contact">Book a consultation</a>
-              <a class="btn ghost" href="mailto:hello@acmebusiness.com">Email us</a>
+              <a class="btn primary" href="mailto:support@doublemvending.com">Email us</a>
             </div>
           </div>
           <div class="hero-panel" aria-label="Service highlights">
             <div class="panel-item">
-              <h3>Operations tune-up</h3>
-              <p>Workflow audits, playbooks, and automation to reduce friction.</p>
+              <h3>Locally owned and operated</h3>
+              <p>We provide hands-on, responsive service from a local team that cares about your space and your people.</p>
             </div>
             <div class="panel-item">
-              <h3>Customer success</h3>
-              <p>Retention programs and onboarding flows that delight clients.</p>
+              <h3>Worry-free service</h3>
+              <p>From setup, maintience and support, we manage every detail so you don’t have to.</p>
             </div>
             <div class="panel-item">
-              <h3>Leadership support</h3>
-              <p>Executive guidance and reporting so teams move in sync.</p>
+              <h3>A smarter on-site amenity</h3>
+              <p>Vending designed to complement modern workplaces and properties.</p>
             </div>
           </div>
         </div>
@@ -59,21 +60,19 @@
         <div class="container">
           <div class="contact-copy">
             <p class="eyebrow">Contact</p>
-            <h2>Tell us about your goals</h2>
+            <h2>Let's work together</h2>
             <p>
-              Share a few details and we’ll respond within one business day with
-              next steps.
+              Drop us a line and we’ll respond within one business day.
             </p>
             <div class="contact-details">
-              <a href="tel:+12125550123">(212) 555-0123</a>
-              <a href="mailto:hello@acmebusiness.com">hello@acmebusiness.com</a>
-              <p>123 Market Street, Suite 400<br />San Francisco, CA 94105</p>
+              <a href="tel:+12104409751">210.440.9751</a>
+              <a href="mailto:support@doublemvending.com">support@doublemvending.com</a>
             </div>
           </div>
-          <form class="contact-form">
+          <form name="contact" class="contact-form" method="POST" data-netlify="true">
             <div class="field">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Jane Doe" />
+              <input id="name" name="name" type="text" placeholder="Jane Doe" required/>
             </div>
             <div class="field">
               <label for="email">Email</label>
@@ -82,6 +81,7 @@
                 name="email"
                 type="email"
                 placeholder="jane@example.com"
+                required
               />
             </div>
             <div class="field">
@@ -90,8 +90,8 @@
                 id="message"
                 name="message"
                 rows="4"
-                placeholder="Share a few details about your project"
-              ></textarea>
+                placeholder="Share a few details about your space"
+                required></textarea>
             </div>
             <button type="submit" class="btn primary">Send message</button>
           </form>
@@ -101,7 +101,7 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; <span id="year"></span> Acme Business. All rights reserved.</p>
+        <p>&copy; <span id="year"></span>Double M Vending. All rights reserved.</p>
       </div>
     </footer>
 
