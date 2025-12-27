@@ -69,7 +69,17 @@
               <a href="mailto:support@doublemvending.com">support@doublemvending.com</a>
             </div>
           </div>
-          <form name="contact" class="contact-form" method="POST" data-netlify="true">
+          <form
+            name="contact"
+            class="contact-form"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field">
+            <input type="hidden" name="contact" value="contact" />
+            <div class="field honeypot" aria-hidden="true">
+              <label for="bot-field">Do not fill this out</label>
+              <input id="bot-field" name="bot-field" type="text" tabindex="-1" />
+            </div>
             <div class="field">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" placeholder="Jane Doe" required/>
@@ -94,6 +104,14 @@
                 required></textarea>
             </div>
             <button type="submit" class="btn primary">Send message</button>
+            <p class="form-message success" role="status" aria-live="polite">
+              Thanks for reaching out! We received your message and will reply within
+              one business day.
+            </p>
+            <p class="form-message error" role="status" aria-live="polite">
+              Something went wrong while sending your message. Please try again in a
+              moment.
+            </p>
           </form>
         </div>
       </section>
