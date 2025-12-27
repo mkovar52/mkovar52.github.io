@@ -14,40 +14,40 @@
     if (errorMessage) errorMessage.style.display = type === "error" ? "block" : "none";
   };
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", async (event) => {
-      event.preventDefault();
-      toggleMessages();
+  // if (contactForm) {
+  //   contactForm.addEventListener("submit", async (event) => {
+  //     event.preventDefault();
+  //     toggleMessages();
 
-      const formData = new FormData(contactForm);
-      const encodedData = new URLSearchParams(formData).toString();
+  //     const formData = new FormData(contactForm);
+  //     const encodedData = new URLSearchParams(formData).toString();
 
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.textContent = "Sending...";
-      }
+  //     if (submitButton) {
+  //       submitButton.disabled = true;
+  //       submitButton.textContent = "Sending...";
+  //     }
 
-      try {
-        const response = await fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encodedData,
-        });
+  //     try {
+  //       const response = await fetch("/", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //         body: encodedData,
+  //       });
 
-        if (response.ok) {
-          contactForm.reset();
-          toggleMessages("success");
-        } else {
-          toggleMessages("error");
-        }
-      } catch (error) {
-        toggleMessages("error");
-      } finally {
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = "Send message";
-        }
-      }
-    });
-  }
+  //       if (response.ok) {
+  //         contactForm.reset();
+  //         toggleMessages("success");
+  //       } else {
+  //         toggleMessages("error");
+  //       }
+  //     } catch (error) {
+  //       toggleMessages("error");
+  //     } finally {
+  //       if (submitButton) {
+  //         submitButton.disabled = false;
+  //         submitButton.textContent = "Send message";
+  //       }
+  //     }
+  //   });
+  // }
 })();
