@@ -54,6 +54,24 @@ a:focus-visible {
   width: 100%;
 }
 
+.honeypot {
+  display: none;
+}
+
+.form-message {
+  margin: 0;
+  font-weight: 700;
+  display: none;
+}
+
+.form-message.success {
+  color: #2d9d78;
+}
+
+.form-message.error {
+  color: #c0392b;
+}
+
 .brand {
   max-width: 240px;
   width: 100px;
